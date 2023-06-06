@@ -18,7 +18,7 @@ const AvailableMeals = () => {
   useEffect(() => {
 //you cannot use async in the func param, since that would make cleanUp function, asynchronous
     const fetchMeal = async() =>{
-      const response = await fetch('https://react-http-57c1f-default-rtdb.firebaseio.com/meals.json');
+      const response = await fetch('https://react-http-57c1f-default-rtdb.firebaseio.com/reactMeals/meals.json');
 
       //Error Handling
       if (!response.ok) {
