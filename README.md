@@ -29,11 +29,13 @@ const CartContext = React.createContext({
 
 export default CartContext;
 ```
+[Check out FULL Code](https://github.com/RafhyKhan/React-MealsDeliveryApp/blob/main/src/store/cart-context.js)
 
 ---
 
 
-
+| Keyword | Description of use |
+| ------ | ----------- |
 | reducer   |  Has all state changes with dispatch, increasing code reusability, and simplicity  |
 ``` js
 const cartReducer = (state, action) => {
@@ -55,6 +57,23 @@ const cartReducer = (state, action) => {
 
 ```
 [Check out FULL Code](https://github.com/RafhyKhan/React-MealsDeliveryApp/blob/main/src/store/CartProvider.js)
+
+
+| Keyword | Description of use |
+| ------ | ----------- |
+| Provider   |  All components inside provider will be notified of cart data changes, and update via context  |
+``` js
+    <CartProvider>
+      {cartIsShown && <Cart onClose={hideCartHandler} />}
+      <Header onShowCart={showCartHandler} />
+      <main>
+        <Meals />
+      </main>
+    </CartProvider>
+  );
+
+```
+[Check out FULL Code](https://github.com/RafhyKhan/React-MealsDeliveryApp/blob/main/src/App.js)
 
 
 ---
