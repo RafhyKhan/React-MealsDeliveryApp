@@ -1,6 +1,6 @@
 # React-MealsDeliveryApp
 
-[Check out the App Online!](https://nextjs-meetups-demo-topaz.vercel.app/)
+[Check out the App Online!](https://react-meals-delivery-app.vercel.app/)
 
 ## Description
 React Meals is a React app using a Context, Reducer and Provider for a simplified development process. 
